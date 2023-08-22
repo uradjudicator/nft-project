@@ -1,0 +1,73 @@
+@font-face {
+    src: url(./Fonts/SpaceMono-Regular.ttf);
+    font-family: 'mono-400';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(./Fonts/SpaceMono-Bold.ttf);
+    font-family: 'mono-700';
+    font-weight: 700;
+}
+
+@font-face {
+    src: url(./Fonts/WorkSans-Regular.ttf);
+    font-family: 'sans-400';
+    font-weight: 400;
+}
+
+@font-face {
+    src: url(./Fonts/WorkSans-SemiBold.ttf);
+    font-family: 'sans-600';
+    font-weight: 600;
+}
+
+@font-face {
+    src: url(./Fonts/WorkSans-Bold.ttf);
+    font-family: 'sans-700';
+    font-weight: 700;
+}
+
+:root {
+    --grey: #3b3b3b;
+    --white: #ffffff;
+    --purple: #a259ff;
+    --background-color: #2b2b2b;
+    --text-color: #858585;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    outline: none;
+    border: none;
+    background: none;
+}
+
+body {
+    font-family: 'sans-400', sans-serif;
+    background-color: var(--background-color);
+}
+
+/* General */
+.container {
+    width: 1050px;
+    margin: 0 auto;
+}
+
+/* Header */
+.header {
+}
