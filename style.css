@@ -57,6 +57,7 @@ button {
     background: none;
 }
 
+
 body {
     font-family: 'sans-400', sans-serif;
     background-color: var(--background-color);
@@ -77,6 +78,24 @@ body {
     font-weight: 600;
     font-family: 'sans-600', sans-serif;
     cursor: pointer;
+}
+
+.btn.outline {
+    background: none;
+    border: 2px solid var(--purple);
+}
+
+.btn.white {
+    background: var(--white);
+    color: var(--background-color);
+}
+
+.btn .white i {
+    color: var(--purple);
+}
+
+.btn .outline i {
+    color: var(--purple);
 }
 
 /* Header */
@@ -433,10 +452,12 @@ body {
     justify-content: center;
     position: relative;
 }
+
 .category .wrapper .card .top img {
     position: relative;
     z-index: 2;
 }
+
 .category .wrapper .card .top::after {
     content: '';
     display: block;
@@ -448,6 +469,7 @@ body {
     left: 0;
     z-index: 1;
 }
+
 .category .wrapper .card .bottom h3 {
     padding: 25px 30px;
     background: #ffffff1a;
@@ -498,7 +520,7 @@ body {
     width: 330px;
     border-radius: 20px;
     overflow: hidden;
-    
+
 }
 
 .discover .wrapper .card .image-block {
@@ -535,13 +557,147 @@ body {
     width: 30px;
     height: 30px;
 }
-.discover .wrapper .card .content .bottom{
-    
+
+.discover .wrapper .card .content .bottom {
+
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.discover .wrapper .card .content .bottom p{
+
+.discover .wrapper .card .content .bottom p {
     color: var(--text-color);
     padding-bottom: 8px;
+}
+
+/* Mushroom */
+
+.mushroom {
+    background: url(./img/NFT-Highlight.png) no-repeat center / cover;
+}
+
+.mushroom .container {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 360px 0 60px;
+}
+
+.mushroom .container .left .user {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+    background: var(--grey);
+    width: 151px;
+    padding: 10px 20px;
+    border-radius: 20px;
+}
+
+.mushroom .container .left .user p {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.mushroom .container .left h2 {
+    font-size: 51px;
+    font-weight: 600;
+    font-family: 'Sans-600', sans-serif;
+    line-height: 56px;
+    padding: 30px 0;
+    color: var(--white);
+}
+
+.mushroom .container .right {
+    background: rgba(59, 59, 59, 0.5);
+    color: var(--white);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.mushroom .container .right h4 {
+    font-size: 12px;
+    font-weight: 600;
+    font-family: 'Mono-400', sans-serif;
+}
+
+.mushroom .container .right .timer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: center;
+    padding-top: 10px;
+}
+
+.mushroom .container .right .timer p {
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'Mono-700', sans-serif;
+}
+
+.mushroom .container .right .timer span {
+    font-size: 12px;
+    font-weight: 400;
+    font-family: 'Mono-400', sans-serif;
+}
+
+/* Digest */
+
+.digest .container {
+    background: var(--grey);
+    margin: 70px auto;
+    padding: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.digest .container .image-block {
+    width: 425px;
+    height: 310px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.digest .container .image-block img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.digest .container .titles {
+    width: 425px;
+    color: var(--white);
+}
+
+.digest .container .titles h1 {
+    font-size: 38px;
+    font-weight: 600;
+}
+
+.digest .container .titles p {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+.digest .container .titles form {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    background: var(--white);
+    border-radius: 20px;
+    margin-top: 40px;
+}
+.digest .container .titles form input{
+    padding: 20px;
+    border: 0;
+    outline: 0;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--grey);
+    background: none;
+}
+.digest .container .titles form  .btn{
+    padding: 20px 50px;
 }
